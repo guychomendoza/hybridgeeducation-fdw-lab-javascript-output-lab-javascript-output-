@@ -1,0 +1,29 @@
+<!--2. Modifica el archivo ejercicio2.html. Crea una página HTML que contenga lo siguiente:
+	- Un título que diga "Demostración de Output en Javascript".
+	- Un botón que, al hacer clic, muestre una alerta con tu nombre.
+	- Un párrafo vacío y un botón que, al hacer clic, cambie el contenido del párrafo a "¡Texto actualizado con Javascript!".
+	- Un mensaje que se imprima en la consola del navegador cuando se cargue la página.-->
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Demostración de Output en Javascript</title>
+    </head>
+    <body>
+        <h1>Demostración de Output en Javascript</h1>
+        <p id="parrafo"></p>
+        <button onclick="mostrarAlerta()">Mostrar Alerta</button>
+        <button onclick="actualizarTexto()">Actualizar Texto</button>
+        <script>
+            function mostrarAlerta() {
+                alert("Luis Mendoza");
+            }
+
+            function actualizarTexto() {
+                document.getElementById("parrafo").innerText = "¡Texto actualizado con Javascript!";
+            }
+
+            console.log("Página cargada correctamente.");
+        </script>
+    </body>
+    </html>

@@ -1,0 +1,17 @@
+<!-- 1. Modifica el archivo ejercicio1.html. Crea una página HTML con un párrafo vacío y un botón. Cuando se haga clic en el botón, el contenido del párrafo debe cambiar a "¡Texto actualizado con Javascript!".-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="parrafo"></p>
+    <button onclick="actualizarTexto()">Actualizar Texto</button>
+    <script>
+        function actualizarTexto() {
+            document.getElementById("parrafo").innerText = "¡Texto actualizado con Javascript!";
+        }
+    </script>
+</body>
+</html>
